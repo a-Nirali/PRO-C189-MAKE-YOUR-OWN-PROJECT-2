@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+</head>
+<style>
+    h1 {
+        color: #7c795d;
+        font-family: 'Trocchi', serif;
+        font-size: 45px;
+        font-weight: normal;
+        line-height: 48px;
+        margin: 50;
+        margin-left: 250px;
+        text-align: justify;
+    }
+    h2{
+        color: cadetblue;
+        font-size: 45px;
+        font-weight: normal;
+        line-height: 48px;
+        margin-left: 500px;
+        text-align: justify;
+    }
+    .header {
+        padding: 60px;
+        text-align: center;
+        background: #1abc9c;
+        color: white;
+        font-size: 30px;
+    }
+    .green{
+        padding: auto;
+        background: #138808;
+    }
+    .traditional_clothes{
+        color: black;
+        font-size: 45px;
+        font-weight: normal;
+        line-height: 48px;
+        margin: 80;
+        margin-left: 300px;
+        text-align: justify;
+    }
+</style>
+
+<body>
+    <a-scene id="scene">
+        <a-sky id="main-container" src=""></a-sky>
+        <a-entity id="button1"></a-entity>
+
+        <div class="header">
+            <h1>WELCOME TO CULTURAL INDIA!</h1>
+            <p>Explore the vast Indian Traditional Clothing</p>
+        </div>
+        <div class="text">
+            <h2>Traditional Clothing In India</h2>
+                <p class="traditional_clothes">India is a land of culture and heritage. Diverse communities live in India. As correctly said, India is the perfect example of a land with ‘unity in diversity.’
+                
+                    Various forms of traditions followed customs believed, food made, languages spoken, and clothing worn.
+                    
+                    Indians are known for their rich traditional beliefs and attires. Traditional attires may include the extravagant Sabyasachi lehenga or a simple khadi Gramin dhoti.
+                    
+                    Indian wardrobes also vary from one state to another, from one region to another. Every place has its unique clothes and style.</p>
+        </div>
+      <a-entity id="camera" camera position="0 1.6 0" wasd-controls look-controls="pointerLockEnabled: false">
+            <a-cursor id="cursor"></a-cursor>
+        </a-entity>
+        <a-entity id="#places-container" cursor-listener heritage></a-entity>
+
+        <a-entity scale="2.5 2.5 2.5" gltf-model="#Indian_flag" position="-25 -10 -20" rotation="0 35 0"></a-entity>
+    </a-scene>
+</body>
+
+</html>
